@@ -80,7 +80,7 @@ describe('SearchTable.vue', () => {
     })
     expect(wrapper.find('#table-pagination-prev').text()).toEqual('Previous')
   })
-  it('shows the paganation button disabled for previous page when no previous link is present in payload', () => {
+  it('shows the pagination button disabled for previous page when no previous link is present in payload', () => {
     let fakePersonListCopy = Object.assign({}, fakePersonList)
     fakePersonListCopy.previous = null
     getters = {
@@ -101,7 +101,7 @@ describe('SearchTable.vue', () => {
     })
     expect(wrapper.find('#table-pagination-prev').attributes().disabled).toBe('disabled')
   })
-  it('shows the paganation button disabled for next page when no next link is present in payload', () => {
+  it('shows the pagination button disabled for next page when no next link is present in payload', () => {
     let fakePersonListCopy = Object.assign({}, fakePersonList)
     fakePersonListCopy.next = null
     getters = {
